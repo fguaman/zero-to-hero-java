@@ -47,4 +47,16 @@ class CI002PrimitiveTypesTest {
         Assertions.assertEquals(32_767, max);
         Assertions.assertTrue(min < max);
     }
+
+    /**
+     * By default, the int data type is a 32-bit signed two's complement integer.
+     */
+    @Test
+    void thisIsAInt() {
+        int min = -2_147_483_648;
+        int max = 2_147_483_647;
+        Assertions.assertEquals(-2_147_483_648, min);
+        Assertions.assertEquals(2_147_483_647, max);
+        Assertions.assertTrue(min < max);
+    }
 }
